@@ -1,7 +1,5 @@
-var xtend = require('xtend');
-
-module.exports = function(timeout) {
-    return new Idle({ timeout: timeout });
+module.exports = function(opts) {
+    return new Idle(opts);
 };
 
 // default settings
@@ -21,7 +19,7 @@ var defaults = {
 var Idle = function(opt) {
     var self = this;
 
-    self.opt = xtend(defaults, opt);
+    self.opt = Object.assign({}, defaults, opt);
     self.element = self.opt.element;
 
     self.state = {
