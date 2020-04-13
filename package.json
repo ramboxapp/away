@@ -1,5 +1,5 @@
 {
-  "name": "away",
+  "name": "@ramboxapp/away",
   "version": "1.0.0",
   "description": "detect when a user is idle on a page",
   "main": "index.js",
@@ -14,10 +14,7 @@
     "test": "zuul test.js",
     "test-local": "zuul --local 8080 test.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/shtylman/away.git"
-  },
+  "repository": "ramboxapp/away",
   "keywords": [
     "idle"
   ],
